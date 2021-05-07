@@ -1,7 +1,7 @@
 [Trigger]
 Type = Package
 Operation = Install
-Target = omada-controller
+Target = omada-sdn-controller
 
 [Action]
 Description = Initializing Omada controller user data directories...

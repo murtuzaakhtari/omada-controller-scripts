@@ -7,7 +7,7 @@
 
 OMADA_USER="omada"
 OMADA_GROUP="${USER}"
-USER_DIR="/var/lib/omada-controller"
+USER_DIR="/var/lib/omada-sdn-controller"
 DATA_DIR="${USER_DIR}/data"
 DATA_DB_DIR="${DATA_DIR}/db"
 DATA_MAP_DIR="${DATA_DIR}/map"
@@ -27,7 +27,7 @@ USER_DIRS=(
     "${MAP_DIR}"
     "${WORK_DIR}"
 )
-OMADA_HOME="/opt/omada-controller"
+OMADA_HOME="/opt/omada-sdn-controller"
 SYMLINKS=(
     "${DATA_DIR}"
     "${DB_DIR}"
