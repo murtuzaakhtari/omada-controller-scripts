@@ -12,7 +12,7 @@ DATA_DIR="${USER_DIR}/data"
 DATA_DB_DIR="${DATA_DIR}/db"
 LOGS_DIR="${USER_DIR}/logs"
 WORK_DIR="${USER_DIR}/work"
-AUTOBACKUP_DIR="${USER_DIR}/autobackup" 
+AUTOBACKUP_DIR="${DATA_DIR}/autobackup" 
 USER_DIRS=(
     "${USER_DIR}"
     "${DATA_DIR}"
