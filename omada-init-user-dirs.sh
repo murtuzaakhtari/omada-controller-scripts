@@ -42,7 +42,7 @@ create_user_directories() {
         fi
 
         if [ "$(stat -c '%U.%G' "${DIR}")" != "${OMADA_USER}.${OMADA_GROUP}" ]; then
-            chown "${OMADA_USER}.${OMADA_GROUP}" "${DIR}"
+            chown "${OMADA_USER}:${OMADA_GROUP}" "${DIR}"
         fi
     done
 }
