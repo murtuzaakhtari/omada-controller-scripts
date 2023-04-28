@@ -6,7 +6,7 @@ After=network.target
 User=omada
 Group=omada
 WorkingDirectory=/opt/omada-controller
-ExecStart=/usr/bin/jsvc -nodetach -cwd /opt/omada-controller/lib -pidfile /dev/null -home /usr/lib/jvm/java-17-openjdk -cp /usr/share/java/commons-daemon.jar:/opt/omada-controller/lib/*:/opt/omada-controller/properties -outfile SYSLOG -errfile SYSLOG -procname omada-controller -showversion -server -Xms128m -Xmx1024m -XX:MaxHeapFreeRatio=60 -XX:MinHeapFreeRatio=30 -XX:+HeapDumpOnOutOfMemoryError -Djava.awt.headless=true com.tplink.smb.omada.starter.OmadaLinuxMain start
+ExecStart=/usr/bin/jsvc -nodetach -cwd /opt/omada-controller/lib -pidfile /dev/null -home /usr/lib/jvm/default -cp /usr/share/java/commons-daemon.jar:/opt/omada-controller/lib/*:/opt/omada-controller/properties -outfile SYSLOG -errfile SYSLOG -procname omada-controller -showversion -server -Xms128m -Xmx1024m -XX:MaxHeapFreeRatio=60 -XX:MinHeapFreeRatio=30 -XX:+HeapDumpOnOutOfMemoryError -Djava.awt.headless=true com.tplink.smb.omada.starter.OmadaLinuxMain start
 ProtectHome=true
 
 [Install]
